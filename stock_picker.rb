@@ -1,6 +1,6 @@
 def stock_picker(array)
   array = Array(array)
-  array.reduce(0) do |old, new_value|
+  return array.reduce(0) do |old, new_value|
     index = 0
     profit = array[0..array.index(new_value)].reduce(0) do |old1, new1|
       new_profit = new_value - new1
